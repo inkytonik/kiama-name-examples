@@ -1,0 +1,11 @@
+class A extends Object {
+  Object f;
+  A(Object f) {
+    super();
+    this.f = f;
+  }
+  A mk(Object f) {
+    return new A(f);
+  }
+}
+new A(new Object()).mk()

@@ -1,0 +1,7 @@
+src/test/resources/tests/cast4.fj:12:1:info: (B)new A() ...: B
+(B) new A()
+^
+src/test/resources/tests/cast4.fj:12:5:info: new A(): A
+(B) new A()
+    ^
+B

@@ -1,0 +1,15 @@
+src/test/resources/tests/inh-constructor1.fj:2:10:info: f def: Object
+  Object f;
+         ^
+src/test/resources/tests/inh-constructor1.fj:3:12:info: f def: Object
+  A(Object f) {
+           ^
+src/test/resources/tests/inh-constructor1.fj:10:3:error: constructor args (Object g) should be the fields (Object f)
+  B(Object g) {
+  ^
+src/test/resources/tests/inh-constructor1.fj:10:12:info: g def: Object
+  B(Object g) {
+           ^
+src/test/resources/tests/inh-constructor1.fj:11:11:error: super arg 0 must be f, not g
+    super(g);
+          ^

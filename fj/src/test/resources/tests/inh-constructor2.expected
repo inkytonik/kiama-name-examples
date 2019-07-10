@@ -1,0 +1,15 @@
+src/test/resources/tests/inh-constructor2.fj:2:5:info: x def: X
+  X x;
+    ^
+src/test/resources/tests/inh-constructor2.fj:3:7:info: x def: X
+  A(X x) {
+      ^
+src/test/resources/tests/inh-constructor2.fj:11:3:error: constructor args (Y x) should be the fields (X x)
+  B(Y x) {
+  ^
+src/test/resources/tests/inh-constructor2.fj:11:7:info: x def: Y
+  B(Y x) {
+      ^
+src/test/resources/tests/inh-constructor2.fj:12:11:error: super arg 0 type must be X, not Y
+    super(x);
+          ^

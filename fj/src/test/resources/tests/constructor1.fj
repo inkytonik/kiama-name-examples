@@ -1,0 +1,7 @@
+class A extends Object {
+  Object f;
+  A(Object g) {
+    super();
+    this.f = g;
+  }
+}

@@ -1,0 +1,4 @@
+// inheritance/cyclic.spt:immediate inheritance cycle
+class A extends A {
+  A() { super(); }
+}

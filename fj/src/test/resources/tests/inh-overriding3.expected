@@ -1,0 +1,25 @@
+src/test/resources/tests/inh-overriding3.fj:5:10:info: x def: X
+  A mk(X x) {
+         ^
+src/test/resources/tests/inh-overriding3.fj:6:12:info: new A(): A
+    return new A();
+           ^
+src/test/resources/tests/inh-overriding3.fj:13:3:error: method type (Y) : A does not match overridden type (X) : A
+  A mk(Y y) {
+  ^
+src/test/resources/tests/inh-overriding3.fj:13:10:info: y def: Y
+  A mk(Y y) {
+         ^
+src/test/resources/tests/inh-overriding3.fj:14:12:info: new B(): B
+    return new B();
+           ^
+src/test/resources/tests/inh-overriding3.fj:27:1:info: new B().mk ...: A
+new B().mk(new Y())
+^
+src/test/resources/tests/inh-overriding3.fj:27:1:info: new B(): B
+new B().mk(new Y())
+^
+src/test/resources/tests/inh-overriding3.fj:27:12:info: new Y(): Y
+new B().mk(new Y())
+           ^
+A

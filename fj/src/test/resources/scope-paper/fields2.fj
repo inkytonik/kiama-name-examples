@@ -1,0 +1,10 @@
+// ADAPTED FROM class/fields.spt:access non-existing field
+// Fix: pass field initializer as parameter
+class A extends Object {
+  Object f;
+  A(Object f) {
+    super();
+    this.f = f;
+  }
+}
+new A(new Object()).g

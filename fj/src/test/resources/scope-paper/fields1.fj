@@ -1,0 +1,9 @@
+// class/fields.spt:access field
+class A extends Object {
+  Object f;
+  A(Object f) {
+    super();
+    this.f = f;
+  }
+}
+new A(new Object()).f

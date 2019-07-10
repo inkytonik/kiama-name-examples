@@ -1,0 +1,16 @@
+// ADAPTED FROM inheritance/constructors.spt:call constructor with supertype argument
+// FIX: Add fields to C
+class A extends Object {
+  A() { super(); }
+}
+class B extends A {
+  B() { super(); }
+}
+class C extends Object {
+  B f;
+  C(B f){
+    super();
+    this.f = f;
+  }
+}
+new C(new A())

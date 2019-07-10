@@ -1,0 +1,13 @@
+class A extends Object {
+  Object f;
+  A(Object f) {
+    super();
+    this.f = f;
+  }
+}
+// Require that the parameter name is the same as field in supertype
+class B extends A {
+  B(Object g) {
+    super(g);
+  }
+}

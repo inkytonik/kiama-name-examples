@@ -1,0 +1,10 @@
+src/test/resources/scope-paper/method1.fj:7:12:info: new B(): B
+    return new B();
+           ^
+src/test/resources/scope-paper/method1.fj:13:1:info: new A().mk ...: B
+new A().mkB()
+^
+src/test/resources/scope-paper/method1.fj:13:1:info: new A(): A
+new A().mkB()
+^
+B

@@ -1,0 +1,16 @@
+src/test/resources/scope-paper/method3.fj:6:10:info: b def: B
+  B id(B b) {
+         ^
+src/test/resources/scope-paper/method3.fj:7:12:info: b: B
+    return b;
+           ^
+src/test/resources/scope-paper/method3.fj:13:1:info: new A().id ...: B
+new A().id(new B())
+^
+src/test/resources/scope-paper/method3.fj:13:1:info: new A(): A
+new A().id(new B())
+^
+src/test/resources/scope-paper/method3.fj:13:12:info: new B(): B
+new A().id(new B())
+           ^
+B

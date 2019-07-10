@@ -1,0 +1,19 @@
+src/test/resources/scope-paper/inh-fields1.fj:3:10:info: f def: Object
+  Object f;
+         ^
+src/test/resources/scope-paper/inh-fields1.fj:4:12:info: f def: Object
+  A(Object f) {
+           ^
+src/test/resources/scope-paper/inh-fields1.fj:10:12:info: f def: Object
+  B(Object f) { super(f); }
+           ^
+src/test/resources/scope-paper/inh-fields1.fj:12:1:info: new B(new  ...: B
+new B(new Object()).f
+^
+src/test/resources/scope-paper/inh-fields1.fj:12:1:info: new B(new  ...: Object
+new B(new Object()).f
+^
+src/test/resources/scope-paper/inh-fields1.fj:12:7:info: new Object ...: Object
+new B(new Object()).f
+      ^
+Object

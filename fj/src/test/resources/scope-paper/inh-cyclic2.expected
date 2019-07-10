@@ -1,0 +1,6 @@
+src/test/resources/scope-paper/inh-cyclic2.fj:2:1:error: superclass cycle from A
+class A extends B {
+^
+src/test/resources/scope-paper/inh-cyclic2.fj:5:1:error: superclass cycle from B
+class B extends A {
+^

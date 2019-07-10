@@ -1,0 +1,4 @@
+src/test/resources/scope-paper/constructor3.fj:7:1:info: new A(): A
+new A()
+^
+A

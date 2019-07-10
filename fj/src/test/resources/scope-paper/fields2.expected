@@ -1,0 +1,16 @@
+src/test/resources/scope-paper/fields2.fj:4:10:info: f def: Object
+  Object f;
+         ^
+src/test/resources/scope-paper/fields2.fj:5:12:info: f def: Object
+  A(Object f) {
+           ^
+src/test/resources/scope-paper/fields2.fj:10:1:info: new A(new  ...: A
+new A(new Object()).g
+^
+src/test/resources/scope-paper/fields2.fj:10:1:info: new A(new  ...: unknown
+new A(new Object()).g
+^
+src/test/resources/scope-paper/fields2.fj:10:7:info: new Object ...: Object
+new A(new Object()).g
+      ^
+unknown

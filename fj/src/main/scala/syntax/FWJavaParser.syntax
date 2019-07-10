@@ -1,0 +1,42 @@
+module syntax.FWJavaParser;
+
+header {
+    import syntax.FWJavaParserSyntax.*;
+}
+
+Program = Spacing L* E? EOF.
+
+L = "class" Identifier "extends" IdnUse "{"
+      (D ";")* K M*
+    "}".
+
+K = IdnUse "(" D ** "," ")" "{"
+      "super" "(" IdnUses ")" ";"   
+      Is 
+    "}".
+      
+M = IdnUse Identifier "(" D ** "," ")" "{"
+      "return" E ";"
+    "}".
+
+D = IdnUse sp IdnDef.
+
+Is = I*.
+I = 'this.' IdnUse "=" IdnUse ";".
+
+E {paren} =
+    E '.' IdnUse '(' E ** "," ')' {Inv, left, 2}
+  | E '.' IdnUse                  {Fld, left, 2}
+  | '(' IdnUse ')' E              {Cst, right, 1}
+  | "new" IdnUse '(' E ** "," ')' {New}
+  | IdnUse                        {Idn}
+  | '(' E ')'.
+
+IdnUses = 
+  IdnUse ** ",".
+
+IdnUse =
+  Identifier.
+
+IdnDef =
+  Identifier.

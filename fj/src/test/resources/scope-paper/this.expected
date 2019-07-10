@@ -1,0 +1,10 @@
+src/test/resources/scope-paper/this.fj:7:12:info: this: A
+    return this;
+           ^
+src/test/resources/scope-paper/this.fj:10:1:info: new A().se ...: A
+new A().self()
+^
+src/test/resources/scope-paper/this.fj:10:1:info: new A(): A
+new A().self()
+^
+A

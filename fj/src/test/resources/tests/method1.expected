@@ -1,0 +1,7 @@
+src/test/resources/tests/method1.fj:6:1:info: new A().m( ...: unknown
+new A().m()
+^
+src/test/resources/tests/method1.fj:6:1:info: new A(): A
+new A().m()
+^
+unknown

@@ -1,0 +1,13 @@
+// class/method.spt:factory method
+class A extends Object {
+  A() {
+    super();
+  }
+  B mkB() {
+    return new B();
+  }
+}
+class B extends Object {
+  B() { super(); }
+}
+new A().mkB()

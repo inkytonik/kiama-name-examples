@@ -1,0 +1,7 @@
+src/test/resources/tests/cast1.fj:6:1:info: (Object)ne ...: Object
+(Object) new A()
+^
+src/test/resources/tests/cast1.fj:6:10:info: new A(): A
+(Object) new A()
+         ^
+Object

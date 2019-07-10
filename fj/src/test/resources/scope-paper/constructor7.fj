@@ -1,0 +1,7 @@
+// class/constructors.spt:test unary constructor
+class A extends Object {
+  A(Object f) {
+    super();
+  }
+}
+new A(new Object())

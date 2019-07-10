@@ -1,0 +1,7 @@
+// inheritance/constructors.spt:inherit nullary constructor class
+class A extends Object {
+  A() { super(); }
+}
+class B extends A {
+  B() { super(); }
+}

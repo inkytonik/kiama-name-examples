@@ -1,0 +1,7 @@
+// inheritance/cyclic.spt:one-step inheritance cycle
+class A extends B {
+  A() { super(); }
+}
+class B extends A {
+  B() { super(); }
+}

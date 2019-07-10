@@ -1,0 +1,6 @@
+// class/constructors.spt:wrong constructor name
+class A extends Object {
+  B() {
+    super();
+  }
+}

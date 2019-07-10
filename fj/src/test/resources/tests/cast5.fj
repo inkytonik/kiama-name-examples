@@ -1,0 +1,6 @@
+class A extends Object {
+  A() {
+    super();
+  }
+}
+(A) new A().m()    // type of unknown expression is unknown

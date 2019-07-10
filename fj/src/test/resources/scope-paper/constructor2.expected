@@ -1,0 +1,4 @@
+src/test/resources/scope-paper/constructor2.fj:2:1:info: new Object ...: Object
+new Object()
+^
+Object

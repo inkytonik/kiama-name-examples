@@ -1,0 +1,9 @@
+src/test/resources/scope-paper/inh-constructor3.fj:4:10:info: f def: Object
+  Object f;
+         ^
+src/test/resources/scope-paper/inh-constructor3.fj:5:12:info: f def: Object
+  A(Object f) {
+           ^
+src/test/resources/scope-paper/inh-constructor3.fj:11:12:info: f def: Object
+  B(Object f) {
+           ^

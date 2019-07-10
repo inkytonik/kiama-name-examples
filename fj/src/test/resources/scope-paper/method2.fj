@@ -1,0 +1,10 @@
+// class/method.spt:constant method
+class A extends Object {
+  A() {
+    super();
+  }
+  A const() {
+    return new A();
+  }
+}
+new A().const()

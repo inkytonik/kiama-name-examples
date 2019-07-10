@@ -1,0 +1,14 @@
+// ADAPTED FROM inheritance/constructors.spt:inherit unary constructor class
+// FIX: Add fields to A
+class A extends Object {
+  Object f;
+  A(Object f) {
+    super();
+    this.f = f;
+  }
+}
+class B extends A {
+  B(Object f) {
+    super(f);
+  }
+}

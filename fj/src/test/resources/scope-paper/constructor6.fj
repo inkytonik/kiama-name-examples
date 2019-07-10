@@ -1,0 +1,12 @@
+// Adapted from class/constructors.spt:missing constructor argument
+// FIXED - Add fields
+class A extends Object {
+  Object f;
+  Object g;
+  A(Object f, Object g) {
+    super();
+    this.f = f;
+    this.g = g;
+  }
+}
+new A(new Object())

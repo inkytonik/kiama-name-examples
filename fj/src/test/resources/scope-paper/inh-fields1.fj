@@ -1,0 +1,12 @@
+// inheritance/fields.spt:access supertype field
+class A extends Object {
+  Object f;
+  A(Object f) {
+    super();
+    this.f = f;
+  }
+}
+class B extends A {
+  B(Object f) { super(f); }
+}
+new B(new Object()).f

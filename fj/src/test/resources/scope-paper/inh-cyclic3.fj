@@ -1,0 +1,10 @@
+// inheritance/cyclic.spt:two-step inheritance cycle
+class A extends B {
+  A() { super(); }
+}
+class B extends C {
+  B() { super(); }
+}
+class C extends A {
+  C() { super(); }
+}

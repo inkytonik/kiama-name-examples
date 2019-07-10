@@ -1,0 +1,13 @@
+src/test/resources/tests/this1.fj:6:12:info: this.this: unknown
+    return this.this;
+           ^
+src/test/resources/tests/this1.fj:6:12:info: this: A
+    return this.this;
+           ^
+src/test/resources/tests/this1.fj:9:1:info: new A().se ...: A
+new A().self()
+^
+src/test/resources/tests/this1.fj:9:1:info: new A(): A
+new A().self()
+^
+A

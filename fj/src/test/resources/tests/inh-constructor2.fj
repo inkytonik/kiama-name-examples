@@ -1,0 +1,24 @@
+class A extends Object {
+  X x;
+  A(X x) {
+    super();
+    this.x = x;
+  }
+}
+// Require that the parameter type is the same as
+// the field's type in the supertype
+class B extends A {
+  B(Y x) {
+    super(x);
+  }
+}
+class X extends Object {
+  X() {
+    super();
+  }
+}
+class Y extends X {
+  Y() {
+    super();
+  }
+}

@@ -1,0 +1,14 @@
+class A extends Object {
+  A() {
+    super();
+  }
+  A mk() {
+    return new A();
+  }
+}
+class B extends A {
+  B() {
+    super();
+  }
+}
+new B().mk()

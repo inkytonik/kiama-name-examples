@@ -1,0 +1,13 @@
+// class/method.spt:identity method
+class A extends Object {
+  A() {
+    super();
+  }
+  B id(B b) {
+    return b;
+  }
+}
+class B extends Object {
+  B() { super(); }
+}
+new A().id(new B())

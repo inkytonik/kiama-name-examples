@@ -1,0 +1,16 @@
+// ADAPTED FROM inheritance/constructors.spt:missing super argument
+// FIX: Add fields to A
+class A extends Object {
+  Object f;
+  Object g;
+  A(Object f, Object g) {
+    super();
+    this.f = f;
+    this.g = g;
+  }
+}
+class B extends A {
+  B(Object f) {
+    super(f);
+  }
+}

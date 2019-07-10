@@ -1,0 +1,13 @@
+src/test/resources/scope-paper/constructor4.fj:4:10:info: f def: Object
+  Object f;
+         ^
+src/test/resources/scope-paper/constructor4.fj:5:12:info: f def: Object
+  A(Object f) {
+           ^
+src/test/resources/scope-paper/constructor4.fj:10:1:info: new A(new  ...: A
+new A(new Object())
+^
+src/test/resources/scope-paper/constructor4.fj:10:7:info: new Object ...: Object
+new A(new Object())
+      ^
+A

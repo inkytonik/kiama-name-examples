@@ -1,0 +1,4 @@
+// class/definitions.spt:single class program
+class A extends Object {
+  A() { super(); }
+}

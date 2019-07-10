@@ -1,0 +1,69 @@
+src/test/resources/scope-paper/pair.fj:11:10:info: fst def: Object
+  Object fst;
+         ^
+src/test/resources/scope-paper/pair.fj:12:10:info: snd def: Object
+  Object snd;
+         ^
+src/test/resources/scope-paper/pair.fj:14:15:info: fst def: Object
+  Pair(Object fst, Object snd) {
+              ^
+src/test/resources/scope-paper/pair.fj:14:27:info: snd def: Object
+  Pair(Object fst, Object snd) {
+                          ^
+src/test/resources/scope-paper/pair.fj:20:22:info: newfst def: Object
+  Pair setfst(Object newfst) {
+                     ^
+src/test/resources/scope-paper/pair.fj:21:12:info: new Pair(n ...: Pair
+    return new Pair(newfst, this.snd);
+           ^
+src/test/resources/scope-paper/pair.fj:21:21:info: newfst: Object
+    return new Pair(newfst, this.snd);
+                    ^
+src/test/resources/scope-paper/pair.fj:21:29:info: this.snd: Object
+    return new Pair(newfst, this.snd);
+                            ^
+src/test/resources/scope-paper/pair.fj:21:29:info: this: Pair
+    return new Pair(newfst, this.snd);
+                            ^
+src/test/resources/scope-paper/pair.fj:24:22:info: newsnd def: Object
+  Pair setsnd(Object newsnd) {
+                     ^
+src/test/resources/scope-paper/pair.fj:25:12:info: new Pair(t ...: Pair
+    return new Pair(this.fst, newsnd);
+           ^
+src/test/resources/scope-paper/pair.fj:25:21:info: this.fst: Object
+    return new Pair(this.fst, newsnd);
+                    ^
+src/test/resources/scope-paper/pair.fj:25:21:info: this: Pair
+    return new Pair(this.fst, newsnd);
+                    ^
+src/test/resources/scope-paper/pair.fj:25:31:info: newsnd: Object
+    return new Pair(this.fst, newsnd);
+                              ^
+src/test/resources/scope-paper/pair.fj:29:12:info: new Pair(t ...: Pair
+    return new Pair(this.snd, this.fst);
+           ^
+src/test/resources/scope-paper/pair.fj:29:21:info: this.snd: Object
+    return new Pair(this.snd, this.fst);
+                    ^
+src/test/resources/scope-paper/pair.fj:29:21:info: this: Pair
+    return new Pair(this.snd, this.fst);
+                    ^
+src/test/resources/scope-paper/pair.fj:29:31:info: this.fst: Object
+    return new Pair(this.snd, this.fst);
+                              ^
+src/test/resources/scope-paper/pair.fj:29:31:info: this: Pair
+    return new Pair(this.snd, this.fst);
+                              ^
+src/test/resources/scope-paper/pair.fj:38:12:info: new Pair(n ...: Pair
+    return new Pair(new A(), new B()).swap();
+           ^
+src/test/resources/scope-paper/pair.fj:38:12:info: new Pair(n ...: Pair
+    return new Pair(new A(), new B()).swap();
+           ^
+src/test/resources/scope-paper/pair.fj:38:21:info: new A(): A
+    return new Pair(new A(), new B()).swap();
+                    ^
+src/test/resources/scope-paper/pair.fj:38:30:info: new B(): B
+    return new Pair(new A(), new B()).swap();
+                             ^

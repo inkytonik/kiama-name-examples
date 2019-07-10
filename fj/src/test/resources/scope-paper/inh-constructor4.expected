@@ -1,0 +1,18 @@
+src/test/resources/scope-paper/inh-constructor4.fj:4:10:info: f def: Object
+  Object f;
+         ^
+src/test/resources/scope-paper/inh-constructor4.fj:5:10:info: g def: Object
+  Object g;
+         ^
+src/test/resources/scope-paper/inh-constructor4.fj:6:12:info: f def: Object
+  A(Object f, Object g) {
+           ^
+src/test/resources/scope-paper/inh-constructor4.fj:6:22:info: g def: Object
+  A(Object f, Object g) {
+                     ^
+src/test/resources/scope-paper/inh-constructor4.fj:13:3:error: constructor args (Object f) should be the fields (Object f, Object g)
+  B(Object f) {
+  ^
+src/test/resources/scope-paper/inh-constructor4.fj:13:12:info: f def: Object
+  B(Object f) {
+           ^

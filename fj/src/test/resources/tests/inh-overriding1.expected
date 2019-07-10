@@ -1,0 +1,13 @@
+src/test/resources/tests/inh-overriding1.fj:6:12:info: new A(): A
+    return new A();
+           ^
+src/test/resources/tests/inh-overriding1.fj:14:12:info: new B(): B
+    return new B();
+           ^
+src/test/resources/tests/inh-overriding1.fj:17:1:info: new B().mk ...: A
+new B().mk()
+^
+src/test/resources/tests/inh-overriding1.fj:17:1:info: new B(): B
+new B().mk()
+^
+A

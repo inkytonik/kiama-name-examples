@@ -1,0 +1,31 @@
+src/test/resources/tests/inh-overriding4.fj:5:15:info: o1 def: Object
+  A mk(Object o1) {
+              ^
+src/test/resources/tests/inh-overriding4.fj:6:12:info: new A(): A
+    return new A();
+           ^
+src/test/resources/tests/inh-overriding4.fj:13:3:error: method type (Object, Object) : A does not match overridden type (Object) : A
+  A mk(Object o1, Object o2) {
+  ^
+src/test/resources/tests/inh-overriding4.fj:13:15:info: o1 def: Object
+  A mk(Object o1, Object o2) {
+              ^
+src/test/resources/tests/inh-overriding4.fj:13:26:info: o2 def: Object
+  A mk(Object o1, Object o2) {
+                         ^
+src/test/resources/tests/inh-overriding4.fj:14:12:info: new B(): B
+    return new B();
+           ^
+src/test/resources/tests/inh-overriding4.fj:17:1:info: new B().mk ...: A
+new B().mk(new Object(), new Object())
+^
+src/test/resources/tests/inh-overriding4.fj:17:1:info: new B(): B
+new B().mk(new Object(), new Object())
+^
+src/test/resources/tests/inh-overriding4.fj:17:12:info: new Object ...: Object
+new B().mk(new Object(), new Object())
+           ^
+src/test/resources/tests/inh-overriding4.fj:17:26:info: new Object ...: Object
+new B().mk(new Object(), new Object())
+                         ^
+A

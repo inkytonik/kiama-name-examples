@@ -1,0 +1,10 @@
+src/test/resources/scope-paper/method2.fj:7:12:info: new A(): A
+    return new A();
+           ^
+src/test/resources/scope-paper/method2.fj:10:1:info: new A().co ...: A
+new A().const()
+^
+src/test/resources/scope-paper/method2.fj:10:1:info: new A(): A
+new A().const()
+^
+A

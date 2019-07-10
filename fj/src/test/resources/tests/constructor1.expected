@@ -1,0 +1,12 @@
+src/test/resources/tests/constructor1.fj:2:10:info: f def: Object
+  Object f;
+         ^
+src/test/resources/tests/constructor1.fj:3:3:error: constructor args (Object g) should be the fields (Object f)
+  A(Object g) {
+  ^
+src/test/resources/tests/constructor1.fj:3:12:info: g def: Object
+  A(Object g) {
+           ^
+src/test/resources/tests/constructor1.fj:5:5:error: initialiser must be this.f = f
+    this.f = g;
+    ^

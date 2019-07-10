@@ -1,0 +1,10 @@
+src/test/resources/tests/cast5.fj:6:1:info: (A)new A() ...: A
+(A) new A().m()    // type of unknown expression is unknown
+^
+src/test/resources/tests/cast5.fj:6:1:info: (A)new A() ...: unknown
+(A) new A().m()    // type of unknown expression is unknown
+^
+src/test/resources/tests/cast5.fj:6:5:info: new A(): A
+(A) new A().m()    // type of unknown expression is unknown
+    ^
+unknown

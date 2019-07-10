@@ -1,0 +1,10 @@
+// Adapted from class/constructors.spt:test unary constructor
+// FIXED - Add fields
+class A extends Object {
+  Object f;
+  A(Object f) {
+    super();
+    this.f = f;
+  }
+}
+new A(new Object())

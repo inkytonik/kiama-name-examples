@@ -1,0 +1,10 @@
+// class/this.spt:return this
+class A extends Object {
+  A() {
+    super();
+  }
+  A self() {
+    return this;
+  }
+}
+new A().self()

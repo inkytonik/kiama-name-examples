@@ -1,0 +1,3 @@
+src/test/resources/tests/inh-extends1.fj:1:17:error: superclass A is not defined
+class B extends A {
+                ^

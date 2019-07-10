@@ -1,0 +1,16 @@
+src/test/resources/tests/inh-overriding2.fj:6:12:info: new A(): A
+    return new A();
+           ^
+src/test/resources/tests/inh-overriding2.fj:13:3:error: method type () : B does not match overridden type () : A
+  B mk() {
+  ^
+src/test/resources/tests/inh-overriding2.fj:14:12:info: new B(): B
+    return new B();
+           ^
+src/test/resources/tests/inh-overriding2.fj:17:1:info: new B().mk ...: B
+new B().mk()
+^
+src/test/resources/tests/inh-overriding2.fj:17:1:info: new B(): B
+new B().mk()
+^
+B

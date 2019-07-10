@@ -1,0 +1,7 @@
+// class/definitions.spt:multiple class program
+class A extends Object {
+  A() { super(); }
+}
+class B extends Object {
+  B() { super(); }
+}

@@ -1,0 +1,3 @@
+src/test/resources/scope-paper/constructor1.fj:3:3:error: constructor name B is not class name A
+  B() {
+  ^

@@ -1,0 +1,28 @@
+src/test/resources/tests/inh-method2.fj:2:10:info: f def: Object
+  Object f;
+         ^
+src/test/resources/tests/inh-method2.fj:3:12:info: f def: Object
+  A(Object f) {
+           ^
+src/test/resources/tests/inh-method2.fj:7:15:info: f def: Object
+  A mk(Object f) {
+              ^
+src/test/resources/tests/inh-method2.fj:8:12:info: new A(f): A
+    return new A(f);
+           ^
+src/test/resources/tests/inh-method2.fj:8:18:info: f: Object
+    return new A(f);
+                 ^
+src/test/resources/tests/inh-method2.fj:11:1:info: new A(new  ...: A
+new A(new Object()).mk(new Object())
+^
+src/test/resources/tests/inh-method2.fj:11:1:info: new A(new  ...: A
+new A(new Object()).mk(new Object())
+^
+src/test/resources/tests/inh-method2.fj:11:7:info: new Object ...: Object
+new A(new Object()).mk(new Object())
+      ^
+src/test/resources/tests/inh-method2.fj:11:24:info: new Object ...: Object
+new A(new Object()).mk(new Object())
+                       ^
+A

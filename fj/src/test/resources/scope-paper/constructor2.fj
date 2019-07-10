@@ -1,0 +1,2 @@
+// class/constructors.spt:construct Object
+new Object()

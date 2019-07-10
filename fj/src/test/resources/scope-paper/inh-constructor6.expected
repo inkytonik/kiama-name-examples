@@ -1,0 +1,13 @@
+src/test/resources/scope-paper/inh-constructor6.fj:10:5:info: f def: B
+  B f;
+    ^
+src/test/resources/scope-paper/inh-constructor6.fj:11:7:info: f def: B
+  C(B f){
+      ^
+src/test/resources/scope-paper/inh-constructor6.fj:16:1:info: new C(new  ...: unknown
+new C(new A())
+^
+src/test/resources/scope-paper/inh-constructor6.fj:16:7:info: new A(): A
+new C(new A())
+      ^
+unknown
