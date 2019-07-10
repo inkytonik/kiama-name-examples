@@ -1,0 +1,10 @@
+src/test/resources/records/with-error.stlc:1:1:info: with 1 do  ...: unknown
+with 1 do 2
+^
+src/test/resources/records/with-error.stlc:1:6:info: 1: num
+with 1 do 2
+     ^
+src/test/resources/records/with-error.stlc:1:11:info: 2: num
+with 1 do 2
+          ^
+unknown

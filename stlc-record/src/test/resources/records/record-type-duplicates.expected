@@ -1,0 +1,16 @@
+src/test/resources/records/record-type-duplicates.stlc:1:1:info: fun (p : { ...: unknown
+fun (p: {a:num, a:num}) { p }
+^
+src/test/resources/records/record-type-duplicates.stlc:1:6:info: p def: argument unknown
+fun (p: {a:num, a:num}) { p }
+     ^
+src/test/resources/records/record-type-duplicates.stlc:1:10:info: a def: field in type num
+fun (p: {a:num, a:num}) { p }
+         ^
+src/test/resources/records/record-type-duplicates.stlc:1:17:info: a def: field in type num
+fun (p: {a:num, a:num}) { p }
+                ^
+src/test/resources/records/record-type-duplicates.stlc:1:27:info: p: unknown
+fun (p: {a:num, a:num}) { p }
+                          ^
+unknown

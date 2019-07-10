@@ -1,0 +1,2 @@
+fun(r : {y : num}) { r } ( {y = 3} extends {x = 1})
+

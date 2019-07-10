@@ -1,0 +1,4 @@
+let r = {a = 23, b = {z = 20}} in
+let q = {b = 19} extends r in
+let f = fun (p : {b : num}) { p.b } in
+f q + q.b

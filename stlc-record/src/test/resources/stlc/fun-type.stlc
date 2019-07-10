@@ -1,0 +1,3 @@
+let f2 = fun(g : num -> num) { g } in 
+let f3 = fun(x: num) { x } in
+f2 f3 10

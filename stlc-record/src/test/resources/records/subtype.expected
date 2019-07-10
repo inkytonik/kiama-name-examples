@@ -1,0 +1,37 @@
+src/test/resources/records/subtype.stlc:1:1:info: fun (r : { ...: {y : num}
+fun(r : {y : num}) { r } ( {y = 3} extends {x = 1})
+^
+src/test/resources/records/subtype.stlc:1:1:info: fun (r : { ...: {y : num} -> {y : num}
+fun(r : {y : num}) { r } ( {y = 3} extends {x = 1})
+^
+src/test/resources/records/subtype.stlc:1:5:info: r def: argument {y : num}
+fun(r : {y : num}) { r } ( {y = 3} extends {x = 1})
+    ^
+src/test/resources/records/subtype.stlc:1:10:info: y def: field in type num
+fun(r : {y : num}) { r } ( {y = 3} extends {x = 1})
+         ^
+src/test/resources/records/subtype.stlc:1:22:info: r: {y : num}
+fun(r : {y : num}) { r } ( {y = 3} extends {x = 1})
+                     ^
+src/test/resources/records/subtype.stlc:1:28:info: {y = 3} ex ...: {y : num, x : num}
+fun(r : {y : num}) { r } ( {y = 3} extends {x = 1})
+                           ^
+src/test/resources/records/subtype.stlc:1:28:info: {y = 3}: {y : num}
+fun(r : {y : num}) { r } ( {y = 3} extends {x = 1})
+                           ^
+src/test/resources/records/subtype.stlc:1:29:info: y def: field in value num
+fun(r : {y : num}) { r } ( {y = 3} extends {x = 1})
+                            ^
+src/test/resources/records/subtype.stlc:1:33:info: 3: num
+fun(r : {y : num}) { r } ( {y = 3} extends {x = 1})
+                                ^
+src/test/resources/records/subtype.stlc:1:44:info: {x = 1}: {x : num}
+fun(r : {y : num}) { r } ( {y = 3} extends {x = 1})
+                                           ^
+src/test/resources/records/subtype.stlc:1:45:info: x def: field in value num
+fun(r : {y : num}) { r } ( {y = 3} extends {x = 1})
+                                            ^
+src/test/resources/records/subtype.stlc:1:49:info: 1: num
+fun(r : {y : num}) { r } ( {y = 3} extends {x = 1})
+                                                ^
+{y : num}

@@ -1,0 +1,76 @@
+src/test/resources/stlc/fun-type2.stlc:2:1:info: let add =  ...: num
+let add = fun(x : num) { fun(y : num) { x + y } } in
+^
+src/test/resources/stlc/fun-type2.stlc:2:5:info: add def: variable num -> num -> num
+let add = fun(x : num) { fun(y : num) { x + y } } in
+    ^
+src/test/resources/stlc/fun-type2.stlc:2:11:info: fun (x : n ...: num -> num -> num
+let add = fun(x : num) { fun(y : num) { x + y } } in
+          ^
+src/test/resources/stlc/fun-type2.stlc:2:15:info: x def: argument num
+let add = fun(x : num) { fun(y : num) { x + y } } in
+              ^
+src/test/resources/stlc/fun-type2.stlc:2:26:info: fun (y : n ...: num -> num
+let add = fun(x : num) { fun(y : num) { x + y } } in
+                         ^
+src/test/resources/stlc/fun-type2.stlc:2:30:info: y def: argument num
+let add = fun(x : num) { fun(y : num) { x + y } } in
+                             ^
+src/test/resources/stlc/fun-type2.stlc:2:41:info: x + y: num
+let add = fun(x : num) { fun(y : num) { x + y } } in
+                                        ^
+src/test/resources/stlc/fun-type2.stlc:2:41:info: x: num
+let add = fun(x : num) { fun(y : num) { x + y } } in
+                                        ^
+src/test/resources/stlc/fun-type2.stlc:2:45:info: y: num
+let add = fun(x : num) { fun(y : num) { x + y } } in
+                                            ^
+src/test/resources/stlc/fun-type2.stlc:3:1:info: let id = f ...: num
+let id  = fun(f : num -> num){ fun(x : num) { f x } } in
+^
+src/test/resources/stlc/fun-type2.stlc:3:5:info: id def: variable (num -> num) -> num -> num
+let id  = fun(f : num -> num){ fun(x : num) { f x } } in
+    ^
+src/test/resources/stlc/fun-type2.stlc:3:11:info: fun (f : n ...: (num -> num) -> num -> num
+let id  = fun(f : num -> num){ fun(x : num) { f x } } in
+          ^
+src/test/resources/stlc/fun-type2.stlc:3:15:info: f def: argument num -> num
+let id  = fun(f : num -> num){ fun(x : num) { f x } } in
+              ^
+src/test/resources/stlc/fun-type2.stlc:3:32:info: fun (x : n ...: num -> num
+let id  = fun(f : num -> num){ fun(x : num) { f x } } in
+                               ^
+src/test/resources/stlc/fun-type2.stlc:3:36:info: x def: argument num
+let id  = fun(f : num -> num){ fun(x : num) { f x } } in
+                                   ^
+src/test/resources/stlc/fun-type2.stlc:3:47:info: f x: num
+let id  = fun(f : num -> num){ fun(x : num) { f x } } in
+                                              ^
+src/test/resources/stlc/fun-type2.stlc:3:47:info: f: num -> num
+let id  = fun(f : num -> num){ fun(x : num) { f x } } in
+                                              ^
+src/test/resources/stlc/fun-type2.stlc:3:49:info: x: num
+let id  = fun(f : num -> num){ fun(x : num) { f x } } in
+                                                ^
+src/test/resources/stlc/fun-type2.stlc:4:1:info: id (add 1) ...: num
+id (add 1) 2 
+^
+src/test/resources/stlc/fun-type2.stlc:4:1:info: id (add 1) ...: num -> num
+id (add 1) 2 
+^
+src/test/resources/stlc/fun-type2.stlc:4:1:info: id: (num -> num) -> num -> num
+id (add 1) 2 
+^
+src/test/resources/stlc/fun-type2.stlc:4:5:info: add 1: num -> num
+id (add 1) 2 
+    ^
+src/test/resources/stlc/fun-type2.stlc:4:5:info: add: num -> num -> num
+id (add 1) 2 
+    ^
+src/test/resources/stlc/fun-type2.stlc:4:9:info: 1: num
+id (add 1) 2 
+        ^
+src/test/resources/stlc/fun-type2.stlc:4:12:info: 2: num
+id (add 1) 2 
+           ^
+num

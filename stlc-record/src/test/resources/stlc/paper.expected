@@ -1,0 +1,34 @@
+src/test/resources/stlc/paper.stlc:1:1:info: let x = 3  ...: num
+let x = 3 in
+^
+src/test/resources/stlc/paper.stlc:1:5:info: x def: variable num
+let x = 3 in
+    ^
+src/test/resources/stlc/paper.stlc:1:9:info: 3: num
+let x = 3 in
+        ^
+src/test/resources/stlc/paper.stlc:2:1:info: let f = fu ...: num
+let f = fun(x : num) { x } in
+^
+src/test/resources/stlc/paper.stlc:2:5:info: f def: variable num -> num
+let f = fun(x : num) { x } in
+    ^
+src/test/resources/stlc/paper.stlc:2:9:info: fun (x : n ...: num -> num
+let f = fun(x : num) { x } in
+        ^
+src/test/resources/stlc/paper.stlc:2:13:info: x def: argument num
+let f = fun(x : num) { x } in
+            ^
+src/test/resources/stlc/paper.stlc:2:24:info: x: num
+let f = fun(x : num) { x } in
+                       ^
+src/test/resources/stlc/paper.stlc:3:1:info: f x: num
+f x
+^
+src/test/resources/stlc/paper.stlc:3:1:info: f: num -> num
+f x
+^
+src/test/resources/stlc/paper.stlc:3:3:info: x: num
+f x
+  ^
+num

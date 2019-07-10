@@ -1,0 +1,13 @@
+src/test/resources/stlc/let.stlc:1:1:info: let x = 1  ...: num
+let x = 1 in x
+^
+src/test/resources/stlc/let.stlc:1:5:info: x def: variable num
+let x = 1 in x
+    ^
+src/test/resources/stlc/let.stlc:1:9:info: 1: num
+let x = 1 in x
+        ^
+src/test/resources/stlc/let.stlc:1:14:info: x: num
+let x = 1 in x
+             ^
+num

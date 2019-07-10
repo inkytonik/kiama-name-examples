@@ -1,0 +1,16 @@
+src/test/resources/records/record-duplicates.stlc:1:1:info: {a = 1, a  ...: {a : num, a : num}
+{a=1, a=2}
+^
+src/test/resources/records/record-duplicates.stlc:1:2:info: a def: field in value num
+{a=1, a=2}
+ ^
+src/test/resources/records/record-duplicates.stlc:1:4:info: 1: num
+{a=1, a=2}
+   ^
+src/test/resources/records/record-duplicates.stlc:1:7:info: a def: field in value num
+{a=1, a=2}
+      ^
+src/test/resources/records/record-duplicates.stlc:1:9:info: 2: num
+{a=1, a=2}
+        ^
+{a : num, a : num}

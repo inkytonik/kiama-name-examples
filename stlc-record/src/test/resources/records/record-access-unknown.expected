@@ -1,0 +1,13 @@
+src/test/resources/records/record-access-unknown.stlc:1:1:info: {a = 1}.b: unknown
+{a = 1}.b
+^
+src/test/resources/records/record-access-unknown.stlc:1:1:info: {a = 1}: {a : num}
+{a = 1}.b
+^
+src/test/resources/records/record-access-unknown.stlc:1:2:info: a def: field in value num
+{a = 1}.b
+ ^
+src/test/resources/records/record-access-unknown.stlc:1:6:info: 1: num
+{a = 1}.b
+     ^
+unknown

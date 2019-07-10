@@ -1,0 +1,3 @@
+let x = 3 in
+let f = fun(x : num) { x } in
+f x

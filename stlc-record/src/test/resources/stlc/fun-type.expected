@@ -1,0 +1,46 @@
+src/test/resources/stlc/fun-type.stlc:1:1:info: let f2 = f ...: num
+let f2 = fun(g : num -> num) { g } in 
+^
+src/test/resources/stlc/fun-type.stlc:1:5:info: f2 def: variable (num -> num) -> num -> num
+let f2 = fun(g : num -> num) { g } in 
+    ^
+src/test/resources/stlc/fun-type.stlc:1:10:info: fun (g : n ...: (num -> num) -> num -> num
+let f2 = fun(g : num -> num) { g } in 
+         ^
+src/test/resources/stlc/fun-type.stlc:1:14:info: g def: argument num -> num
+let f2 = fun(g : num -> num) { g } in 
+             ^
+src/test/resources/stlc/fun-type.stlc:1:32:info: g: num -> num
+let f2 = fun(g : num -> num) { g } in 
+                               ^
+src/test/resources/stlc/fun-type.stlc:2:1:info: let f3 = f ...: num
+let f3 = fun(x: num) { x } in
+^
+src/test/resources/stlc/fun-type.stlc:2:5:info: f3 def: variable num -> num
+let f3 = fun(x: num) { x } in
+    ^
+src/test/resources/stlc/fun-type.stlc:2:10:info: fun (x : n ...: num -> num
+let f3 = fun(x: num) { x } in
+         ^
+src/test/resources/stlc/fun-type.stlc:2:14:info: x def: argument num
+let f3 = fun(x: num) { x } in
+             ^
+src/test/resources/stlc/fun-type.stlc:2:24:info: x: num
+let f3 = fun(x: num) { x } in
+                       ^
+src/test/resources/stlc/fun-type.stlc:3:1:info: f2 f3 10: num
+f2 f3 10
+^
+src/test/resources/stlc/fun-type.stlc:3:1:info: f2 f3: num -> num
+f2 f3 10
+^
+src/test/resources/stlc/fun-type.stlc:3:1:info: f2: (num -> num) -> num -> num
+f2 f3 10
+^
+src/test/resources/stlc/fun-type.stlc:3:4:info: f3: num -> num
+f2 f3 10
+   ^
+src/test/resources/stlc/fun-type.stlc:3:7:info: 10: num
+f2 f3 10
+      ^
+num

@@ -1,0 +1,25 @@
+src/test/resources/records/subtype2.stlc:1:1:info: fun (r : { ...: unknown
+fun(r : {y : num}) { r } {x = 1}
+^
+src/test/resources/records/subtype2.stlc:1:1:info: fun (r : { ...: {y : num} -> {y : num}
+fun(r : {y : num}) { r } {x = 1}
+^
+src/test/resources/records/subtype2.stlc:1:5:info: r def: argument {y : num}
+fun(r : {y : num}) { r } {x = 1}
+    ^
+src/test/resources/records/subtype2.stlc:1:10:info: y def: field in type num
+fun(r : {y : num}) { r } {x = 1}
+         ^
+src/test/resources/records/subtype2.stlc:1:22:info: r: {y : num}
+fun(r : {y : num}) { r } {x = 1}
+                     ^
+src/test/resources/records/subtype2.stlc:1:26:info: {x = 1}: {x : num}
+fun(r : {y : num}) { r } {x = 1}
+                         ^
+src/test/resources/records/subtype2.stlc:1:27:info: x def: field in value num
+fun(r : {y : num}) { r } {x = 1}
+                          ^
+src/test/resources/records/subtype2.stlc:1:31:info: 1: num
+fun(r : {y : num}) { r } {x = 1}
+                              ^
+unknown

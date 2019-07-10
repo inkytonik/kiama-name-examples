@@ -1,0 +1,1 @@
+fun (p: {a:num, a:num}) { p }

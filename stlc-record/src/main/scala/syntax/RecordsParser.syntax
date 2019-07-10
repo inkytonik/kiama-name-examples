@@ -1,0 +1,51 @@
+module syntax.RecordsParser;
+
+header {
+    import syntax.RecordsParserSyntax.*;
+}
+
+Program =
+    Spacing Exp EOF.
+
+Exp {paren} =
+    "let" IdnDef sp "=" Exp sp "in" \n Exp            {Let, right, 6}
+  | "with" Exp sp "do" Exp                            {Wth, right, 5}
+  | Exp sp "+" Exp                                    {Plus, left, 4}
+  | Exp sp "extends" Exp                              {Ext, right, 3}
+  | Exp sp Exp                                        {App, left, 2}
+  | Exp '.' Identifier                                {Acc, left, 1}
+  | "fun" '(' IdnDef sp ":" Typ ")" "{" Exp sp '}'    {Fun}
+  | '{' Fields '}'                                    {Rec}
+  | IntLit                                            {Num, 1: Integer.parseInt : Int}
+  | IdnUse
+  | '(' Exp ')'.
+
+Fields =
+  Field ** ",".
+
+Field =
+  IdnDef sp "=" Exp.
+
+Typ {paren} =
+    Typ sp "->" Typ           {FunT, right, 1}
+  | '{' FieldTyp ** "," '}'   {RecT}
+  | 'num'                     {NumT}
+  | '(' Typ ')'.
+
+FieldTyp =
+  IdnDef sp ":" Typ.
+
+IdnUse : Exp =
+  Identifier.
+
+IdnDef =
+  Identifier.
+
+IntLit : Token =
+  '-'? Digits.
+
+Digits : String =
+  Digit+.
+
+Digit : String =
+  [0-9].

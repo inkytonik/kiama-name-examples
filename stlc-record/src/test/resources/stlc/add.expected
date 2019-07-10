@@ -1,0 +1,10 @@
+src/test/resources/stlc/add.stlc:1:1:info: 1 + 2: num
+1 + 2
+^
+src/test/resources/stlc/add.stlc:1:1:info: 1: num
+1 + 2
+^
+src/test/resources/stlc/add.stlc:1:5:info: 2: num
+1 + 2
+    ^
+num

@@ -1,0 +1,16 @@
+src/test/resources/records/record-unknown.stlc:1:1:info: {a = 1, b  ...: unknown
+{a=1, b=c}
+^
+src/test/resources/records/record-unknown.stlc:1:2:info: a def: field in value num
+{a=1, b=c}
+ ^
+src/test/resources/records/record-unknown.stlc:1:4:info: 1: num
+{a=1, b=c}
+   ^
+src/test/resources/records/record-unknown.stlc:1:7:info: b def: field in value unknown
+{a=1, b=c}
+      ^
+src/test/resources/records/record-unknown.stlc:1:9:info: c: unknown
+{a=1, b=c}
+        ^
+unknown

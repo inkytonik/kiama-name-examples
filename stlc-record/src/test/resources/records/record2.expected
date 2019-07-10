@@ -1,0 +1,16 @@
+src/test/resources/records/record2.stlc:1:1:info: {a = 1, b  ...: {a : num, b : {}}
+{a=1, b={}}
+^
+src/test/resources/records/record2.stlc:1:2:info: a def: field in value num
+{a=1, b={}}
+ ^
+src/test/resources/records/record2.stlc:1:4:info: 1: num
+{a=1, b={}}
+   ^
+src/test/resources/records/record2.stlc:1:7:info: b def: field in value {}
+{a=1, b={}}
+      ^
+src/test/resources/records/record2.stlc:1:9:info: {}: {}
+{a=1, b={}}
+        ^
+{a : num, b : {}}

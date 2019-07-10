@@ -1,0 +1,88 @@
+src/test/resources/records/paper.stlc:1:1:info: let r = {a ...: num
+let r = {a = 23, b = {z = 20}} in
+^
+src/test/resources/records/paper.stlc:1:5:info: r def: variable {a : num, b : {z : num}}
+let r = {a = 23, b = {z = 20}} in
+    ^
+src/test/resources/records/paper.stlc:1:9:info: {a = 23, b ...: {a : num, b : {z : num}}
+let r = {a = 23, b = {z = 20}} in
+        ^
+src/test/resources/records/paper.stlc:1:10:info: a def: field in value num
+let r = {a = 23, b = {z = 20}} in
+         ^
+src/test/resources/records/paper.stlc:1:14:info: 23: num
+let r = {a = 23, b = {z = 20}} in
+             ^
+src/test/resources/records/paper.stlc:1:18:info: b def: field in value {z : num}
+let r = {a = 23, b = {z = 20}} in
+                 ^
+src/test/resources/records/paper.stlc:1:22:info: {z = 20}: {z : num}
+let r = {a = 23, b = {z = 20}} in
+                     ^
+src/test/resources/records/paper.stlc:1:23:info: z def: field in value num
+let r = {a = 23, b = {z = 20}} in
+                      ^
+src/test/resources/records/paper.stlc:1:27:info: 20: num
+let r = {a = 23, b = {z = 20}} in
+                          ^
+src/test/resources/records/paper.stlc:2:1:info: let q = {b ...: num
+let q = {b = 19} extends r in
+^
+src/test/resources/records/paper.stlc:2:5:info: q def: variable {b : num, a : num}
+let q = {b = 19} extends r in
+    ^
+src/test/resources/records/paper.stlc:2:9:info: {b = 19} e ...: {b : num, a : num}
+let q = {b = 19} extends r in
+        ^
+src/test/resources/records/paper.stlc:2:9:info: {b = 19}: {b : num}
+let q = {b = 19} extends r in
+        ^
+src/test/resources/records/paper.stlc:2:10:info: b def: field in value num
+let q = {b = 19} extends r in
+         ^
+src/test/resources/records/paper.stlc:2:14:info: 19: num
+let q = {b = 19} extends r in
+             ^
+src/test/resources/records/paper.stlc:2:26:info: r: {a : num, b : {z : num}}
+let q = {b = 19} extends r in
+                         ^
+src/test/resources/records/paper.stlc:3:1:info: let f = fu ...: num
+let f = fun (p : {b : num}) { p.b } in
+^
+src/test/resources/records/paper.stlc:3:5:info: f def: variable {b : num} -> num
+let f = fun (p : {b : num}) { p.b } in
+    ^
+src/test/resources/records/paper.stlc:3:9:info: fun (p : { ...: {b : num} -> num
+let f = fun (p : {b : num}) { p.b } in
+        ^
+src/test/resources/records/paper.stlc:3:14:info: p def: argument {b : num}
+let f = fun (p : {b : num}) { p.b } in
+             ^
+src/test/resources/records/paper.stlc:3:19:info: b def: field in type num
+let f = fun (p : {b : num}) { p.b } in
+                  ^
+src/test/resources/records/paper.stlc:3:31:info: p.b: num
+let f = fun (p : {b : num}) { p.b } in
+                              ^
+src/test/resources/records/paper.stlc:3:31:info: p: {b : num}
+let f = fun (p : {b : num}) { p.b } in
+                              ^
+src/test/resources/records/paper.stlc:4:1:info: f q + q.b: num
+f q + q.b
+^
+src/test/resources/records/paper.stlc:4:1:info: f q: num
+f q + q.b
+^
+src/test/resources/records/paper.stlc:4:1:info: f: {b : num} -> num
+f q + q.b
+^
+src/test/resources/records/paper.stlc:4:3:info: q: {b : num, a : num}
+f q + q.b
+  ^
+src/test/resources/records/paper.stlc:4:7:info: q.b: num
+f q + q.b
+      ^
+src/test/resources/records/paper.stlc:4:7:info: q: {b : num, a : num}
+f q + q.b
+      ^
+num

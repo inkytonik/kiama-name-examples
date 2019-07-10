@@ -1,0 +1,22 @@
+src/test/resources/records/with.stlc:1:1:info: with {a =  ...: num
+with {a=1} do a+1
+^
+src/test/resources/records/with.stlc:1:6:info: {a = 1}: {a : num}
+with {a=1} do a+1
+     ^
+src/test/resources/records/with.stlc:1:7:info: a def: field in value num
+with {a=1} do a+1
+      ^
+src/test/resources/records/with.stlc:1:9:info: 1: num
+with {a=1} do a+1
+        ^
+src/test/resources/records/with.stlc:1:15:info: a + 1: num
+with {a=1} do a+1
+              ^
+src/test/resources/records/with.stlc:1:15:info: a: num
+with {a=1} do a+1
+              ^
+src/test/resources/records/with.stlc:1:17:info: 1: num
+with {a=1} do a+1
+                ^
+num

@@ -1,0 +1,13 @@
+src/test/resources/stlc/unknown3.stlc:1:1:info: let x = x  ...: unknown
+let x = x in x
+^
+src/test/resources/stlc/unknown3.stlc:1:5:info: x def: variable unknown
+let x = x in x
+    ^
+src/test/resources/stlc/unknown3.stlc:1:9:info: x: unknown
+let x = x in x
+        ^
+src/test/resources/stlc/unknown3.stlc:1:14:info: x: unknown
+let x = x in x
+             ^
+unknown

@@ -1,0 +1,2 @@
+let r = {a=1} in
+with r do a+r.a

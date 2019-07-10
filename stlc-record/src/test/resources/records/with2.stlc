@@ -1,0 +1,2 @@
+let a = 1 in
+with {b=2} do a+b

@@ -1,0 +1,4 @@
+src/test/resources/stlc/unknown.stlc:1:1:info: y: unknown
+y
+^
+unknown
